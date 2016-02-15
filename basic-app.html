@@ -3,8 +3,7 @@
 </head>
 
 <body>
-
-  {{> applicationLayouyt}}
+  {{> applicationLayout}}
 </body>
 
 <template name='applicationLayout'>
@@ -12,6 +11,22 @@
   {{> Template.dynamic template=sidebar}}
   {{> Template.dynamic template=main}}
   {{> Template.dynamic template=footer}}
+  {{> Template.dynamic template=test}}
 </template>
 
 
+<template name='headerTemplate'>
+  <h1>HEader</h1>
+</template>
+<template name='sidebarTemplate'>
+  <h1>sidebar</h1>
+</template>
+<template name='termsOfService'>
+  <h1>Main</h1>
+</template>
+<template name='footerTemplate'>
+  <h1>Footer</h1>
+</template>
+<template name='test'>
+  <h1>test</h1>
+</template>
